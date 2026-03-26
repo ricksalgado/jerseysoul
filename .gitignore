@@ -1,0 +1,24 @@
+# --- Shopify Specific ---
+# Ignora configurações locais do CLI e logs
+.shopify/
+config.yml
+*.log
+inventory.csv
+
+# --- Node / Tooling ---
+# Ignora as bibliotecas instaladas (elas são pesadas e não devem ir pro Git)
+node_modules/
+dist/
+build/
+.cache/
+
+# --- OS Specific ---
+# Arquivos inúteis que o Windows e Mac criam sozinhos
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Security ---
+# NUNCA suba arquivos .env (onde ficam chaves de API e senhas)
+.env
+.env.local
