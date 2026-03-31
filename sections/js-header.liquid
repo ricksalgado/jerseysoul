@@ -1,0 +1,37 @@
+<!--  Jersey Soul Custom Header - JS Header -->
+
+<header class="js-header">
+    <div class="js-header__wrapper">
+      
+      <nav class="js-nav js-nav--left">
+        {% comment %} Aqui entra o menu da esquerda {% endcomment %}
+      </nav>
+  
+      <div class="js-header__logo">
+         {% comment %} Aqui entra o logo centralizado {% endcomment %}
+      </div>
+  
+      <nav class="js-nav js-nav--right">
+        {% comment %} Aqui entra o menu da direita + Icons {% endcomment %}
+      </nav>
+  
+    </div>
+  </header>
+  
+  {% schema %}
+  {
+    "name": "JS Header",
+    "settings": [
+      {
+        "type": "link_list",
+        "id": "menu",
+        "label": "Menu Principal"
+      }
+    ],
+    "presets": [
+      {
+        "name": "JS Header"
+      }
+    ]
+  }
+  {% endschema %}
