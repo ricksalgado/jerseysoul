@@ -1,7 +1,7 @@
 {%- assign mainMenu = linklists[section.settings.menu].links -%}
 
 
-<header class="js-header">
+<header id="js-header">
     <a href="{{ routes.root.url }}">
         {% if section.settings.logo != blank %}
             {{ section.settings.logo | image_url: width: 250 | image_tag: loading: 'eager' }}
@@ -19,18 +19,31 @@
 {% schema %}
 {
 
-    "name": "Jersey Soul - Header",
+    "name": "JS Header",
     "settings": [
-    {
-        "type": "link_list",
-        "id": "menu",
-        "label": "Menu Principal"
-    }
+        {
+            "type": "link_list",
+            "id": "menu",
+            "label": "Jersey Soul Header"
+        }
     ],
     "presets": [
         {
-            "name": "JS Header"
+            "name": "Jersey Soul Header",
+            "category": "Header",
+            "blocks": [
+                {
+                    "type": "_header-logo"
+                }
+            ]
         }
+    ],
+    "blocks": [
+        {
+            "type": "_header-logo"
+        }
+        
     ]
+
 }
 {% endschema %}
