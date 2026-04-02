@@ -1,8 +1,8 @@
-*{
+* {
     margin: 0;
 }
 
-:root{
+:root {
     --acoNitido: #7A8B99;
     --cremeRico: #fefdf1;
     --pretoProfundo: #111111;
@@ -10,16 +10,30 @@
     --vermelhoRubi: #d32f2f;
 }
 
-.js-header-container{
+.js-header-container {
     width: 100vw;
     background-color: var(--linhoLimpo);
-
-    .js-header-logo{
-
-    }
-
-    .header-upper-nav{
-
-    }
+    display: grid;
+    grid-template-columns: 1fr 300px;
 }
 
+.js-header-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-upper-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header-upper-nav {
+    background-color: yellowgreen;
+    width: 100px;
+    height: 100px;
+}
