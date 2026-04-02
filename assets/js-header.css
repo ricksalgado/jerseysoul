@@ -10,3 +10,16 @@
     --vermelhoRubi: #d32f2f;
 }
 
+.js-header-container{
+    width: 100vw;
+    background-color: var(--linhoLimpo);
+
+    .js-header-logo{
+
+    }
+
+    .header-upper-nav{
+
+    }
+}
+

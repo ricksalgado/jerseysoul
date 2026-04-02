@@ -3,50 +3,49 @@
 <!-- CSS link -->
 {{ 'js-header.css' | asset_url | stylesheet_tag }}
 
-
 <header id="js-header">
-    <a href="{{ routes.root.url }}">
-        {% if section.settings.logo != blank %}
-            {{ section.settings.logo | image_url: width: 250 | image_tag: loading: 'eager' }}
-        {% else %}
-            <h1>{{ shop.name }}</h1>
-        {% endif %}
-
+  <div class="js-header-container">
+    <a href="{{ routes.root.url }}" class="js-header-logo">
+      {% if section.settings.logo != blank %}
+        {{ section.settings.logo | image_url: width: 250 | image_tag: loading: 'eager' }}
+      {% else %}
+        {% comment %} NAO ESQUECA DE SUBSTITUIR O TITULO <h1>{{ shop.name }}</h1> {% endcomment %}
+        <h1>Printfinish APP</h1>
+      {% endif %}
     </a>
-    <div>
-
+    <div class="header-upper-nav">
+      <svg class="upper-nav-field"></svg>
+      <svg class="upper-nav-field"></svg>
+      <svg class="upper-nav-field"></svg>
     </div>
-
+  </div>
 </header>
 
 {% schema %}
 {
-
-    "name": "JS Header",
-    "settings": [
+  "name": "JS Header",
+  "settings": [
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Jersey Soul Header"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Jersey Soul Header",
+      "category": "Header",
+      "blocks": [
         {
-            "type": "link_list",
-            "id": "menu",
-            "label": "Jersey Soul Header"
+          "type": "_header-logo"
         }
-    ],
-    "presets": [
-        {
-            "name": "Jersey Soul Header",
-            "category": "Header",
-            "blocks": [
-                {
-                    "type": "_header-logo"
-                }
-            ]
-        }
-    ],
-    "blocks": [
-        {
-            "type": "_header-logo"
-        }
-        
-    ]
-
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "_header-logo"
+    }
+  ]
 }
 {% endschema %}
