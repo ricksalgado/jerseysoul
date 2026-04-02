@@ -1,12 +1,15 @@
 {%- assign mainMenu = linklists[section.settings.menu].links -%}
 
+<!-- CSS link -->
+{{ 'js-header.css' | asset_url | stylesheet_tag }}
+
 
 <header id="js-header">
     <a href="{{ routes.root.url }}">
         {% if section.settings.logo != blank %}
             {{ section.settings.logo | image_url: width: 250 | image_tag: loading: 'eager' }}
         {% else %}
-            <h1>14</h1>
+            <h1>{{ shop.name }}</h1>
         {% endif %}
 
     </a>
