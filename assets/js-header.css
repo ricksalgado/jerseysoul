@@ -10,6 +10,13 @@
     --vermelhoRubi: #d32f2f;
 }
 
+.logo-placeholder{
+    display: block;
+    width: 100px !important;
+    height: 100px !important;
+    background-color: var(--acoNitido);
+}
+
 .js-header-container {
     width: 100vw;
     background-color: var(--linhoLimpo);
