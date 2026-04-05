@@ -4,6 +4,9 @@
 <!-- CSS link -->
 {{ 'js-header.css' | asset_url | stylesheet_tag }}
 
+<!-- GSAP file -->
+<script src="{{ 'js-header-gsap.js' | asset_url }}" defer="defer"></script>
+
 <header id="js-header">
   <div class="js-header-container">
     <div class="header-empty"></div>
@@ -27,6 +30,15 @@
       <h1>{{ shop.name }}</h1>
     {% endif %}
   </a>
+  <nav>
+    <ul class="header-nav-list">
+      {% for link in mainMenu %}
+        <li class="header-nav-item">
+          <a href="{{ link.url }}" class="header-nav-link">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
 </header>
 
 {% schema %}
