@@ -31,13 +31,20 @@
     {% endif %}
   </a>
   <nav>
-    <ul class="header-nav-list">
+    {% comment %} <ul class="header-nav-list">
       {% for link in mainMenu %}
         <li class="header-nav-item">
           <a href="{{ link.url }}" class="header-nav-link">{{ link.title }}</a>
         </li>
       {% endfor %}
-    </ul>
+    </ul> {% endcomment %}
+<ul class="header-nav-list">
+  <li class="header-nav-opt">Clubs</li>
+  <li class="header-nav-opt nav-active">Nationals</li>
+  <li class="header-nav-opt">About Us</li>
+  <li class="header-nav-opt">Services</li>
+  <li class="header-nav-opt">Contact</li>
+</ul>
   </nav>
 </header>
 
