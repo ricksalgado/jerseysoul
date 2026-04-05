@@ -10,6 +10,10 @@
     --vermelhoRubi: #d32f2f;
 }
 
+header {
+    background-color: var(--cremeRico);
+}
+
 .js-header {
     width: 100%;
     display: flex;
