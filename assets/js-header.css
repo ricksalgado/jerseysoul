@@ -21,7 +21,6 @@
 .js-header-container {
     width: 100vw;
     height: 100px;
-    background-color: var(--linhoLimpo);
     display: grid;
     grid-template-columns: 4fr 1fr;
     flex-direction: row;
@@ -43,7 +42,7 @@
 }
 
 .header-upper-nav {
-    width: 100% !important;
+    width: 150px;
     display: flex;
     gap: 5px;
     flex-direction: row;
@@ -52,8 +51,19 @@
 }
 
 .upper-nav-field {
-    /* background-color: yellowgreen; */
     height: 100px;
     display: flex;
-        
-    }
+    justify-content: center;
+    align-items: center;
+}
+
+a>i {
+    color: var(--acoNitido);
+    font-size: 20px;
+}
+
+a>i:hover {
+    color: var(--vermelhoRubi);
+    transform: scale(1.3);
+    transition: all 0.3s ease-in-out;
+}
