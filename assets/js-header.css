@@ -52,6 +52,8 @@
 }
 
 .upper-nav-field {
-    background-color: yellowgreen;
+    /* background-color: yellowgreen; */
     height: 100px;
-}
+    display: flex;
+        
+    }
