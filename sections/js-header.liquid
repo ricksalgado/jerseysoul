@@ -1,28 +1,27 @@
 {%- assign mainMenu = linklists[section.settings.menu].links -%}
+{%- assign jsLogo = settings.logo -%}
 
 <!-- CSS link -->
 {{ 'js-header.css' | asset_url | stylesheet_tag }}
 
 <header id="js-header">
   <div class="js-header-container">
-    <a href="{{ routes.root.url }}" class="js-header-logo">
-      {% comment %}
-        {% if section.settings.logo != blank %}
-          {{ section.settings.logo | image_url: width: 250 | image_tag: loading: 'eager' }}
-        {% else %}
-          {% comment %} NAO ESQUECA DE SUBSTITUIR O TITULO <h1>{{ shop.name }}</h1> {% endcomment %}
-          <h1>Printfinish APP</h1>
-        {% endif %}
-      {% endcomment %}
-      <div class="logo-placeholder"></div>
-    </a>
+    <div class="header-empty"></div>
+    <div class="header-upper-nav">
+      <svg class="upper-nav-field search-icon"></svg>
+      <svg class="upper-nav-field cart-icon"></svg>
+      <svg class="upper-nav-field account-icon"></svg>
+    </div>
   </div>
+  <a href="{{ routes.root.url }}">
+    {% if jsLogo != blank %}
+      {{ jsLogo | image_url: width: 400 | image_tag: class: 'js-header-logo' }}
+    {% else %}
+      {% comment %} NAO ESQUECA DE SUBSTITUIR O TITULO <h1>{{ shop.name }}</h1> {% endcomment %}
+      <h1>{{ shop.name }}</h1>
+    {% endif %}
+  </a>
 
-  <div class="header-upper-nav">
-    <svg class="upper-nav-field"></svg>
-    <svg class="upper-nav-field"></svg>
-    <svg class="upper-nav-field"></svg>
-  </div>
 </header>
 
 {% schema %}
@@ -33,6 +32,11 @@
       "type": "link_list",
       "id": "menu",
       "label": "Jersey Soul Header"
+    },
+    {
+      "type": "image_picker",
+      "id": "jsLogo",
+      "label": "Jersey Soul Logo"
     }
   ],
   "presets": [

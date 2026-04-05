@@ -10,37 +10,48 @@
     --vermelhoRubi: #d32f2f;
 }
 
-.logo-placeholder{
-    display: block;
-    width: 100px !important;
-    height: 100px !important;
-    background-color: var(--acoNitido);
+.js-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .js-header-container {
     width: 100vw;
+    height: 100px;
     background-color: var(--linhoLimpo);
     display: grid;
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: 4fr 1fr;
+    flex-direction: row;
+    align-items: center;
+    justify-items: flex-end;
+    gap: 5px;
+    padding: 0 60px;
 }
 
-.js-header-logo{
-    width: 100%;
+.js-header-logo {
+    width: 250px !important;
+    max-width: 250px !important;
+    position: relative;
+    top: -70px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: -40px auto;
 }
 
 .header-upper-nav {
+    width: 100% !important;
     display: flex;
+    gap: 5px;
     flex-direction: row;
-    align-items: space-between;
+    align-items: space-around;
     justify-content: space-between;
-    width: 100%;
 }
 
-.header-upper-nav {
+.upper-nav-field {
     background-color: yellowgreen;
-    width: 100px;
     height: 100px;
 }
