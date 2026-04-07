@@ -6,52 +6,26 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */ {
   "sections": {
     "js-hero": {
-      "type": "hero",
+      "type": "js-hero",
       "blocks": {
-        "text_YLPk4p": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<p>Browse our latest products</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground-heading)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
+        "shape_1": {
+          "type": "shape"
         },
-        "button_H9gpTf": {
-          "type": "button",
-          "name": "t:names.button",
-          "settings": {
-            "label": "Shop all",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "button-secondary",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
-        }
+        "shape_2": {
+          "type": "shape"
+        },
+        "shape_3": {
+          "type": "shape"
+        },
+        "shape_4": {
+          "type": "shape"
+        },
+        "shape_5": {
+          "type": "shape"
+        },
       },
       "block_order": [
         "text_YLPk4p",

@@ -7,5 +7,46 @@
 <script src="{{ 'js-header-gsap.js' | asset_url }}" defer="defer"></script>
 
 <section class="js-hero">
-    
+  {% comment %} conteudo vem aqui {% endcomment %}
 </section>
+
+{% schema %}
+{
+  "name": "JS Hero Shapes",
+  "max_blocks": 5,
+  "settings": [
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Backgorund Color",
+      "default": "#000000"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "shape",
+      "name": "Shape Irregular",
+      "settings": [
+        { "type": "image_picker", "id": "shape_img", "label": "Imagem do Shape" },
+        { "type": "color", "id": "shape_bg", "label": "Cor de Fundo do Shape", "default": "#cccccc" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "JS Hero Shapes",
+      "blocks": [
+        {
+          "type": "shape"
+        },
+        {
+          "type": "shape"
+        },
+        {
+          "type": "shape"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
