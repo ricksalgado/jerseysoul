@@ -28,7 +28,11 @@
         },
       },
       "block_order": [
-        "text_YLPk4p",
+        "shape_1",
+        "shape_2",
+        "shape_3",
+        "shape_4",
+        "shape_5",
         "button_H9gpTf"
       ],
       "name": "t:names.hero",

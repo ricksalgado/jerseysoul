@@ -1,13 +1,15 @@
 {%- assign jsLogo = settings.logo -%}
 
 <!-- CSS link -->
-{{ 'js-header.css' | asset_url | stylesheet_tag }}
+{{ 'js-hero.css' | asset_url | stylesheet_tag }}
 
 <!-- GSAP file -->
-<script src="{{ 'js-header-gsap.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'js-hero-gsap.js' | asset_url }}" defer="defer"></script>
 
-<section class="js-hero">
-  {% comment %} conteudo vem aqui {% endcomment %}
+<section class="js-hero-section">
+  <div>
+    <h1>conteudo aqui</h1>
+  </div>
 </section>
 
 {% schema %}
@@ -27,8 +29,17 @@
       "type": "shape",
       "name": "Shape Irregular",
       "settings": [
-        { "type": "image_picker", "id": "shape_img", "label": "Imagem do Shape" },
-        { "type": "color", "id": "shape_bg", "label": "Cor de Fundo do Shape", "default": "#cccccc" }
+        {
+          "type": "image_picker",
+          "id": "shape_img",
+          "label": "Imagem do Shape"
+        },
+        {
+          "type": "color",
+          "id": "shape_bg",
+          "label": "Shape's Background Color",
+          "default": "#cccccc"
+        }
       ]
     }
   ],
@@ -36,6 +47,12 @@
     {
       "name": "JS Hero Shapes",
       "blocks": [
+        {
+          "type": "shape"
+        },
+        {
+          "type": "shape"
+        },
         {
           "type": "shape"
         },
