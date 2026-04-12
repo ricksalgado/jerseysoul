@@ -1,5 +1,3 @@
-
-
 {% liquid
   assign media_count = 0
   assign media_count_mobile = 0
@@ -44,7 +42,7 @@
       assign media_count_mobile = media_count_mobile | plus: 1
     endif
     if section.settings.image_2_mobile != blank and section.settings.media_type_2_mobile == 'image'
-      a ssign media_2_mobile = 'image'
+      assign media_2_mobile = 'image'
       assign media_count_mobile = media_count_mobile | plus: 1
     endif
     if section.settings.video_2_mobile != blank and section.settings.media_type_2_mobile == 'video'
