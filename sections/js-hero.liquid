@@ -7,8 +7,12 @@
 <script src="{{ 'js-hero-gsap.js' | asset_url }}" defer="defer"></script>
 
 <section class="js-hero-section">
-  <div>
-    <h1>conteudo aqui</h1>
+  <div id="heroshapes">
+    <div class="shape" id="shape1"></div>
+    <div class="shape" id="shape2"></div>
+    <div class="shape" id="shape3"></div>
+    <div class="shape" id="shape4"></div>
+    <div class="shape" id="shape5"></div>
   </div>
 </section>
 
@@ -20,8 +24,8 @@
     {
       "type": "color",
       "id": "bg_color",
-      "label": "Backgorund Color",
-      "default": "#000000"
+      "label": "Backgorund Color"
+      //"default": "#000000"
     }
   ],
   "blocks": [
@@ -32,12 +36,12 @@
         {
           "type": "image_picker",
           "id": "shape_img",
-          "label": "Imagem do Shape"
+          "label": "Shape Image"
         },
         {
           "type": "color",
           "id": "shape_bg",
-          "label": "Shape's Background Color",
+          "label": "Shape Background Color",
           "default": "#cccccc"
         }
       ]
