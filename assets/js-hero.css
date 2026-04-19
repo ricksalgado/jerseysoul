@@ -18,8 +18,15 @@
      .shape {
           width: 100%;
           height: 100%;
-          background-color: brown;
+          display: flex;
+          justify-content: end;
+          align-items: end;
      }
+}
+
+.heroimg {
+     transform: scale(0.9);
+     width: 100%;
 }
 
 #shape1 {
