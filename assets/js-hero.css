@@ -22,23 +22,23 @@
      }
 
      #shape1 {
-          clip-path: polygon(0 8%, 100% 0, 85% 100%, 40% 95%);
+          clip-path: polygon(0 17%, 100% 13%, 85% 90%, 44% 82%);
      }
 
      #shape2 {
-          clip-path: polygon(0 8%, 100% 0, 85% 100%, 40% 95%);
+          clip-path: polygon(24% 15%, 94% 38%, 100% 96%, 0% 100%);
      }
 
      #shape3 {
-          clip-path: polygon(0 8%, 100% 0, 85% 100%, 40% 95%);
+          clip-path: polygon(0 0, 100% 2%, 96% 100%, 28% 98%);
      }
 
      #shape4 {
-          clip-path: polygon(0 8%, 100% 0, 85% 100%, 40% 95%);
-     }
+          clip-path: polygon(8% 16%, 100% 12%, 76% 96%, 0 100%);
 
+     }
      #shape5 {
-          clip-path: polygon(0 8%, 100% 0, 85% 100%, 40% 95%);
+          clip-path: polygon(23% 32%, 94% 37%, 100% 82%, 0% 100%);
      }
 
 
